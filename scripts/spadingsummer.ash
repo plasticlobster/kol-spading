@@ -242,7 +242,7 @@ summer_consumable spade_consumable(item it) {
 }
 
 void main() {
-   if (my_path() != 36) {
+   if (my_path() != "Two Crazy Random Summer") {
       print("go away");
       exit;
    }
