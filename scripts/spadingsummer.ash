@@ -271,7 +271,7 @@ summer_consumable spade_consumable(item it) {
 }
 
 void main() {
-   if ((my_path() != "Two Crazy Random Summer") && (my_path() != 36)) {
+   if (my_path() != "Two Crazy Random Summer") {
       print("go away");
       exit;
    }
@@ -296,7 +296,7 @@ void main() {
             summer_consumables[count(summer_consumables)] = spade_consumable(it);
             j++;
          }
-         else if (!it.usable && it.string_modifier("modifiers") != ""){
+         else if (to_slot(it) != $slot[none]) {
             summer_items[count(summer_items)] = spade_equipment(it);
             j++;
          } else {
